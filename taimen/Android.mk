@@ -21,7 +21,7 @@ ifeq ($(TARGET_DEVICE),taimen)
 include $(CLEAR_VARS)
 LOCAL_MODULE := AmbientSensePrebuilt
 LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+LOCAL_SRC_FILES := proprietary/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
