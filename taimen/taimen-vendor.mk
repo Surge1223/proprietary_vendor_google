@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/etc/firmware/dnd.sound_model:system/etc/firmware/dnd.sound_model \
     vendor/google/taimen/proprietary/etc/firmware/music_detector.descriptor:system/etc/firmware/music_detector.descriptor \
     vendor/google/taimen/proprietary/etc/firmware/music_detector.sound_model:system/etc/firmware/music_detector.sound_model \
+    vendor/google/taimen/proprietary/etc/permissions/com.android.ims.rcsmanager.xml:system/etc/permissions/com.android.ims.rcsmanager.xml \
     vendor/google/taimen/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.customermobile.preload.vzw.xml:system/etc/permissions/com.customermobile.preload.vzw.xml \
     vendor/google/taimen/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
@@ -55,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/google/taimen/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/google/taimen/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/google/taimen/proprietary/lib/libiperf.so:system/lib/libiperf.so \
     vendor/google/taimen/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
     vendor/google/taimen/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/google/taimen/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -72,13 +74,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/lib64/libclcore_debug_g.bc:system/lib64/libclcore_debug_g.bc \
     vendor/google/taimen/proprietary/lib64/libclcore.bc:system/lib64/libclcore.bc \
     vendor/google/taimen/proprietary/lib64/libclcore_g.bc:system/lib64/libclcore_g.bc \
+    vendor/google/taimen/proprietary/lib64/libiperf.so:system/lib64/libiperf.so \
     vendor/google/taimen/proprietary/bin/bufferhubd:system/bin/bufferhubd \
     vendor/google/taimen/proprietary/bin/vr_hwc:system/bin/vr_hwc \
     vendor/google/taimen/proprietary/bin/virtual_touchpad:system/bin/virtual_touchpad \
     vendor/google/taimen/proprietary/bin/performanced:system/bin/performanced \
     vendor/google/taimen/proprietary/bin/applypatch:system/bin/applypatch \
     vendor/google/taimen/proprietary/bin/ramoops:system/bin/ramoops \
-    vendor/google/taimen/proprietary/bin/setactiveslot:system/bin/setactiveslot
+    vendor/google/taimen/proprietary/bin/setactiveslot:system/bin/setactiveslot \
+    vendor/google/taimen/proprietary/bin/iperf3:system/bin/iperf3 \
+    vendor/google/taimen/proprietary/bin/netutils-wrapper-1.0:system/bin/netutils-wrapper-1.0 \
+    vendor/google/taimen/proprietary/bin/sanitizer-status:system/bin/sanitizer-status
 
 PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
