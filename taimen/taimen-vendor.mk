@@ -84,13 +84,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/bin/setactiveslot:system/bin/setactiveslot \
     vendor/google/taimen/proprietary/bin/iperf3:system/bin/iperf3 \
     vendor/google/taimen/proprietary/bin/netutils-wrapper-1.0:system/bin/netutils-wrapper-1.0 \
-    vendor/google/taimen/proprietary/bin/sanitizer-status:system/bin/sanitizer-status
+    vendor/google/taimen/proprietary/bin/sanitizer-status:system/bin/sanitizer-status \
+    vendor/google/taimen/proprietary/framework/com.android.ims.rcsmanager.jar:/system/framework/com.android.ims.rcsmanager.jar
 
 PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     EaselServicePrebuilt \
     VZWAPNLib \
-    embms \
     ims \
     vzw_msdc_api \
     CNEService \
@@ -104,16 +104,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentTGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    ModemService \
     OBDM_Permissions \
     OemDmTrigger \
-    QtiTelephonyService \
-    SSRestartDetector \
-    SprintDM \
-    SprintHM \
-    TimeService \
     VzwOmaTrigger \
-    datastatusnotification \
     obdm_stub \
     qcrilmsgtunnel \
     VerizonUnifiedSettings \
