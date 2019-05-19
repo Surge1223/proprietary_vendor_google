@@ -12,86 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt apps
-PRODUCT_PACKAGES += \
-    arcore \
-    com.qualcomm.qti.services.secureui \
-    datastatusnotification \
-    EaselServicePrebuilt \
-    embms \
-    ims \
-    MobileFeliCaClient \
-    MobileFeliCaMenuApp \
-    MobileFeliCaMenuMainApp \
-    MobileFeliCaSettingApp \
-    MobileFeliCaWebPlugin \
-    MobileFeliCaWebPluginBoot \
-    Ornament \
-    PresencePolling \
-    QtiTelephonyService \
-    RcsService \
-    remotesimlockservice \
-    SeempService \
-    smcinvokepkgmgr \
-    SSRestartDetector \
-    Tycho \
-    uceShimService \
-    uimlpaservice \
-    VZWAPNLib
-
-# Prebuilt privileged apps
-PRODUCT_PACKAGES += \
-    AmbientSensePrebuilt \
-    AppDirectedSMSService \
-    CarrierServices \
-    CarrierSetup \
-    CNEService \
-    ConnMO \
-    DMService \
-    DreamlinerPrebuilt \
-    DCMO \
-    DiagMon \
-    EuiccGoogle \
-    GCS \
-    grilservice \
-    HardwareInfo \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentTGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
-    LLKAgent\
-    ModemService \
-    MyVerizonServices \
-    OBDM_Permissions \
-    obdm_stub \
-    OemDmTrigger \
-    qcrilmsgtunnel \
-    SCONE \
-    Showcase \
-    SprintDM \
-    SprintHM \
-    VerizonAuthDialog \
-    VzwOmaTrigger \
-    WfcActivation
-
-# Prebuilt jars
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    com.google.android.camera.experimental2018 \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    embmslibrary \
-    libhwinfo \
-    qcrilhook \
-    QtiTelephonyServicelibrary \
-    uimlpalibrary \
-    uimremotesimlocklibrary \
-    vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.soter-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    VerizonUnifiedSettings
-
-# Blob(s) necessary for Crosshatch product.img
-
 PRODUCT_COPY_FILES := \
     proprietary/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
     proprietary/etc/permissions/android.hardware.sensor.assist.xml:system/etc/permissions/android.hardware.sensor.assist.xml \
@@ -120,94 +40,12 @@ PRODUCT_COPY_FILES := \
     proprietary/etc/scone/country_border.leveldb:system/etc/scone/country_border.leveldb \
     proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
-    proprietary/product/etc/cne/andsfCne.xml:system/product/etc/cne/andsfCne.xml \
-    proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:system/product/etc/permissions/com.android.sdm.plugins.connmo.xml \
-    proprietary/product/etc/permissions/com.android.vzwomatrigger.xml:system/product/etc/permissions/com.android.vzwomatrigger.xml \
-    proprietary/product/etc/permissions/com.customermobile.preload.vzw.xml:system/product/etc/permissions/com.customermobile.preload.vzw.xml \
-    proprietary/product/etc/permissions/com.verizon.apn.xml:system/product/etc/permissions/com.verizon.apn.xml \
-    proprietary/product/etc/permissions/com.verizon.llkagent.xml:system/product/etc/permissions/com.verizon.llkagent.xml \
-    proprietary/product/etc/permissions/com.verizon.services.xml:system/product/etc/permissions/com.verizon.services.xml \
-    proprietary/product/etc/permissions/obdm_permissions.xml:system/product/etc/permissions/obdm_permissions.xml \
-    proprietary/product/etc/permissions/vzw_mvs_permissions.xml:system/product/etc/permissions/vzw_mvs_permissions.xml \
 
 PRODUCT_COPY_FILES := \
-    proprietary/app/arcore/arcore.apk:system/app/arcore/arcore.apk \
-    proprietary/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk:system/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk \
-    proprietary/app/datastatusnotification/datastatusnotification.apk:system/app/datastatusnotification/datastatusnotification.apk \
-    proprietary/app/EaselServicePrebuilt/EaselServicePrebuilt.apk:system/app/EaselServicePrebuilt/EaselServicePrebuilt.apk \
-    proprietary/app/embms/embms.apk:system/app/embms/embms.apk \
-    proprietary/app/ims/ims.apk:system/app/ims/ims.apk \
-    proprietary/app/Ornament/Ornament.apk:system/app/Ornament/Ornament.apk \
-    proprietary/app/QtiTelephonyService/QtiTelephonyService.apk:system/app/QtiTelephonyService/QtiTelephonyService.apk \
-    proprietary/app/remotesimlockservice/remotesimlockservice.apk:system/app/remotesimlockservice/remotesimlockservice.apk \
-    proprietary/app/SeempService/SeempService.apk:system/app/SeempService/SeempService.apk \
-    proprietary/app/smcinvokepkgmgr/smcinvokepkgmgr.apk:system/app/smcinvokepkgmgr/smcinvokepkgmgr.apk \
-    proprietary/app/Tycho/Tycho.apk:system/app/Tycho/Tycho.apk \
-    proprietary/app/uceShimService/uceShimService.apk:system/app/uceShimService/uceShimService.apk \
-    proprietary/app/uimlpaservice/uimlpaservice.apk:system/app/uimlpaservice/uimlpaservice.apk \
-    proprietary/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk:system/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk \
-    proprietary/priv-app/CarrierServices/CarrierServices.apk:system/priv-app/CarrierServices/CarrierServices.apk \
-    proprietary/priv-app/CarrierSetup/CarrierSetup.apk:system/priv-app/CarrierSetup/CarrierSetup.apk \
-    proprietary/priv-app/CNEService/CNEService.apk:system/priv-app/CNEService/CNEService.apk \
-    proprietary/priv-app/DMService/DMService.apk:system/priv-app/DMService/DMService.apk \
-    proprietary/priv-app/DreamlinerPrebuilt/DreamlinerPrebuilt.apk:system/priv-app/DreamlinerPrebuilt/DreamlinerPrebuilt.apk \
-    proprietary/priv-app/EuiccGoogle/EuiccGoogle.apk:system/priv-app/EuiccGoogle/EuiccGoogle.apk \
-    proprietary/priv-app/GCS/GCS.apk:system/priv-app/GCS/GCS.apk \
-    proprietary/priv-app/grilservice/grilservice.apk:system/priv-app/grilservice/grilservice.apk \
-    proprietary/priv-app/HardwareInfo/HardwareInfo.apk:system/priv-app/HardwareInfo/HardwareInfo.apk \
-    proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:system/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk \
-    proprietary/priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:system/priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk \
-    proprietary/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:system/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk \
-    proprietary/priv-app/ModemService/ModemService.apk:system/priv-app/ModemService/ModemService.apk \
-    proprietary/priv-app/OemDmTrigger/OemDmTrigger.apk:system/priv-app/OemDmTrigger/OemDmTrigger.apk \
-    proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
-    proprietary/priv-app/SCONE/SCONE.apk:system/priv-app/SCONE/SCONE.apk \
-    proprietary/priv-app/SprintDM/SprintDM.apk:system/priv-app/SprintDM/SprintDM.apk \
-    proprietary/priv-app/SprintHM/SprintHM.apk:system/priv-app/SprintHM/SprintHM.apk \
-    proprietary/priv-app/VerizonAuthDialog/VerizonAuthDialog.apk:system/priv-app/VerizonAuthDialog/VerizonAuthDialog.apk \
-    proprietary/priv-app/WfcActivation/WfcActivation.apk:system/priv-app/WfcActivation/WfcActivation.apk
-
-
-PRODUCT_COPY_FILES := \
-    proprietary/product/app/MobileFeliCaClient/MobileFeliCaClient.apk:system/product/app/MobileFeliCaClient/MobileFeliCaClient.apk \
-    proprietary/product/app/MobileFeliCaMenuApp/MobileFeliCaMenuApp.apk:system/product/app/MobileFeliCaMenuApp/MobileFeliCaMenuApp.apk \
-    proprietary/product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk:system/product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk \
-    proprietary/product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk:system/product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk \
-    proprietary/product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk:system/product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk \
-    proprietary/product/app/MobileFeliCaWebPlugin/MobileFeliCaWebPlugin.apk:system/product/app/MobileFeliCaWebPlugin/MobileFeliCaWebPlugin.apk \
-    proprietary/product/app/SSRestartDetector/SSRestartDetector.apk:system/product/app/SSRestartDetector/SSRestartDetector.apk \
-    proprietary/product/app/VZWAPNLib/VZWAPNLib.apk:system/product/app/VZWAPNLib/VZWAPNLib.apk \
-    proprietary/product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk:system/product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk \
-    proprietary/product/priv-app/ConnMO/ConnMO.apk:system/product/priv-app/ConnMO/ConnMO.apk \
-    proprietary/product/priv-app/DCMO/DCMO.apk:system/product/priv-app/DCMO/DCMO.apk \
-    proprietary/product/priv-app/DiagMon/DiagMon.apk:system/product/priv-app/DiagMon/DiagMon.apk \
-    proprietary/product/priv-app/LLKAgent/LLKAgent.apk:system/product/priv-app/LLKAgent/LLKAgent.apk \
-    proprietary/product/priv-app/MyVerizonServices/MyVerizonServices.apk:system/product/priv-app/MyVerizonServices/MyVerizonServices.apk \
-    proprietary/product/priv-app/OBDM_Permissions/OBDM_Permissions.apk:system/product/priv-app/OBDM_Permissions/OBDM_Permissions.apk \
-    proprietary/product/priv-app/obdm_stub/obdm_stub.apk:system/product/priv-app/obdm_stub/obdm_stub.apk \
-    proprietary/product/priv-app/Showcase/Showcase.apk:system/product/priv-app/Showcase/Showcase.apk \
-    proprietary/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:system/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk
-
-
-PRODUCT_COPY_FILES := \
-    proprietary/framework/com.google.android.camera.experimental2018.jar:system/framework/com.google.android.camera.experimental2018.jar \
-    proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    proprietary/framework/libhwinfo.jar:system/framework/libhwinfo.jar \
     proprietary/framework/LowPowerMonitorDeviceInterface.jar:system/framework/LowPowerMonitorDeviceInterface.jar \
     proprietary/framework/LowPowerMonitorDeviceRpm.jar:system/framework/LowPowerMonitorDeviceRpm.jar \
     proprietary/framework/PowerAnomalyDataModemInterface.jar:system/framework/PowerAnomalyDataModemInterface.jar \
     proprietary/framework/PowerAnomalyQcril.jar:system/framework/PowerAnomalyQcril.jar \
-    proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
-    proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
-    proprietary/framework/uimremotesimlocklibrary.jar:system/framework/uimremotesimlocklibrary.jar \
-    proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
-    proprietary/framework/VerizonUnifiedSettings.jar:system/framework/VerizonUnifiedSettings.jar \
-
-
 
 PRODUCT_COPY_FILES := \
     proprietary/lib64/android.hardware.radio@1.0.so:system/lib64/android.hardware.radio@1.0.so \
@@ -381,7 +219,7 @@ PRODUCT_COPY_FILES := \
      proprietary/product/priv-app/obdm_stub/obdm_stub.apk:system/product/priv-app/obdm_stub/obdm_stub.apk \
      proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
      proprietary/product/priv-app/Showcase/Showcase.apk:system/product/priv-app/Showcase/Showcase.apk \
-     proprietary/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:system/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk
+     proprietary/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:system/product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk \
      proprietary/product/etc/cne/andsfCne.xml:system/product/etc/cne/andsfCne.xml \
      proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:system/product/etc/permissions/com.android.sdm.plugins.connmo.xml \
      proprietary/product/etc/permissions/com.android.vzwomatrigger.xml:system/product/etc/permissions/com.android.vzwomatrigger.xml \
@@ -392,3 +230,4 @@ PRODUCT_COPY_FILES := \
      proprietary/product/etc/permissions/obdm_permissions.xml:system/product/etc/permissions/obdm_permissions.xml \
      proprietary/product/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
      proprietary/product/etc/permissions/vzw_mvs_permissions.xml:system/product/etc/permissions/vzw_mvs_permissions.xml
+
